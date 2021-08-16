@@ -1,5 +1,8 @@
 
 export const types = {
-  addCounter: "ADD_COUNTER",
-  removeCounter: "REMOVE_COUNTER"
+  addCounter: "[COUNTER] ADD_COUNTER",
+  removeCounter: "[COUNTER] REMOVE_COUNTER",
+
+  login: "[AUTH] LOGIN",
+  logout: "[AUTH] LOGOUT"
 }
