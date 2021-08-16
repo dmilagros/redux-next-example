@@ -1,5 +1,5 @@
-import { compose, createStore } from "redux";
-import { reducerCounter } from "../reducers/reducerCounter";
+import { combineReducers, compose, createStore } from "redux";
+import { reducerCounter, reducerAuth } from "../reducers/reducerCounter";
 
 // Middleware for nextapp - *** JUST development environment
 const composeEnhancers =
@@ -9,4 +9,9 @@ const composeEnhancers =
       // Specify extension’s options like name, actionsBlacklist, actionsCreators, serialize...
     }) : compose;
 
-export const store = createStore(reducerCounter, composeEnhancers());
+const reducerGeneral = combineReducers({
+  counter: reducerCounter,
+  auth: reducerAuth,
+})
+
+export const store = createStore(reducerGeneral, composeEnhancers());
