@@ -1,13 +1,8 @@
-/* 
-  const auth = {}
-  const auth ={
-    user: 'Milagros',
-    password: '123456'
-  }
-*/
+
 
 import { types } from "../types/types";
 
+// 2 - ACTIONS
 export const loginAction = {
   type: types.login,
   payload: {

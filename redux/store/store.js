@@ -1,5 +1,6 @@
 import { combineReducers, compose, createStore } from "redux";
-import { reducerCounter, reducerAuth } from "../reducers/reducerCounter";
+import { reducerCounter } from "../reducers/reducerCounter";
+import { reducerAuth } from "../reducers/reducerAuth";
 
 // Middleware for nextapp - *** JUST development environment
 const composeEnhancers =
@@ -10,6 +11,7 @@ const composeEnhancers =
     }) : compose;
 
 const reducerGeneral = combineReducers({
+  // 4 - STORE
   counter: reducerCounter,
   auth: reducerAuth,
 })

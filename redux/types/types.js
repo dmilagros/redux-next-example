@@ -1,5 +1,6 @@
 
 export const types = {
+  // 1 - TYPES
   addCounter: "[COUNTER] ADD_COUNTER",
   removeCounter: "[COUNTER] REMOVE_COUNTER",
 
